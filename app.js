@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 const crown_69_Router = require('./routes/crown_69');
 const crown2_69_Router = require('./routes/crown2_69');
 const api_69_Router = require('./routes/api_69');
+const midproj_69 = require('./routes/midproj_69');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/api_69', api_69_Router);
 app.use('/crown_69', crown_69_Router);
 app.use('/crown2_69', crown2_69_Router);
 /*midProj_69*/
+app.use('midproj_69', midproj_69_Router);
 /*finalProj_69*/
 
 // catch 404 and forward to error handler
