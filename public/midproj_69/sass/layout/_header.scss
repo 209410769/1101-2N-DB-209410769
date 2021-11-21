@@ -1,9 +1,11 @@
 .header_warp {
   background: white;
   position: fixed;
+  width:100%
 }
 
 .contact-header {
+  width:100%;
   position: relative;
   background: $fender-header-color;
 
@@ -52,11 +54,12 @@
     display: flex;
 
     .navbar-menu-toggle {
-      margin: 1rem 0 0 2rem;
+      margin: 1rem 5rem 0 2rem;
       width: 5%;
       .fas {
         list-style: none;
         text-decoration: none;
+        margin: 5rem;
         color: $fender-header-list;
       }
     }
@@ -64,14 +67,14 @@
     .navbar-contact__list {
       list-style: none;
       position: relative;
-      margin: 1rem 2rem;
-      width: 80%;
+      margin: 1rem 5rem;
+      width: 100%;
       text-align: center;
       display: flex;
       li {
         margin: 0 2rem;
         a {
-          color: $fender-header-list;
+          color: $fender-header-navbar;
           list-style: none;
           text-decoration: none;
         }

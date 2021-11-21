@@ -14,9 +14,11 @@ html {
 .header_warp {
   background: white;
   position: fixed;
+  width: 100%;
 }
 
 .contact-header {
+  width: 100%;
   position: relative;
   background: #ffffff;
 }
@@ -62,19 +64,20 @@ html {
   display: flex;
 }
 .navbar-contact__container .navbar-menu-toggle {
-  margin: 1rem 0 0 2rem;
+  margin: 1rem 5rem 0 2rem;
   width: 5%;
 }
 .navbar-contact__container .navbar-menu-toggle .fas {
   list-style: none;
   text-decoration: none;
+  margin: 5rem;
   color: #888;
 }
 .navbar-contact__container .navbar-contact__list {
   list-style: none;
   position: relative;
-  margin: 1rem 2rem;
-  width: 80%;
+  margin: 1rem 5rem;
+  width: 100%;
   text-align: center;
   display: flex;
 }
@@ -82,7 +85,7 @@ html {
   margin: 0 2rem;
 }
 .navbar-contact__container .navbar-contact__list li a {
-  color: #888;
+  color: #666666;
   list-style: none;
   text-decoration: none;
 }
@@ -106,6 +109,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1.5rem;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

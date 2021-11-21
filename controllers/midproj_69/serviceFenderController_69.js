@@ -1,9 +1,8 @@
-const Category_69 = require('../../models/crown_69/Category_69');
-const Shop_69 = require('../../models/crown_69/Shop_69')
+const Frontpage_69 = require('../../models/midproj_69/Frontpage_69');
 
 exports.getCategories = async (req, res) => {
   try {
-    return await Category_69.fetchAll();
+    return await Frontpage_69.fetchAll();
   } catch (err) {
     console.log('getCategories', err);
   }
@@ -20,7 +19,7 @@ exports.getShop = async(req,res)=> {
 exports.getProductsByCategory = async (category) => {
   console.log('service',category);
   try {
-  const cid = await Category_69.fetchCatIdByName(category);
+  const cid = await Frontpage_69.fetchCatIdByName(category);
   const results = await Shop_69.fetchByCatId(cid);
   //console.log('service getProductsByCategory',JSON.stringify(results));
   return results;
