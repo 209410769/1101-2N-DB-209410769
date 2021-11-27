@@ -1,11 +1,11 @@
 .header_warp {
   background: white;
   position: fixed;
-  width:100%
+  width: 100%;
 }
 
 .contact-header {
-  width:100%;
+  width: 100%;
   position: relative;
   background: $fender-header-color;
 
@@ -56,6 +56,8 @@
     .navbar-menu-toggle {
       margin: 1rem 5rem 0 2rem;
       width: 5%;
+      align-items: center;
+      justify-content: center;
       .fas {
         list-style: none;
         text-decoration: none;
@@ -71,8 +73,12 @@
       width: 100%;
       text-align: center;
       display: flex;
+      align-items: center;
+      justify-content: center;
       li {
         margin: 0 2rem;
+        align-items: center;
+        justify-content: center;
         a {
           color: $fender-header-navbar;
           list-style: none;
@@ -81,12 +87,18 @@
       }
     }
     .navbar-search-toggle {
-     margin:1rem -1.5rem 0 0;
-      width: 5%;
-      .fas {
-        list-style: none;
-        text-decoration: none;
-        color: $fender-header-list;
+      margin: 1rem -1.5rem 0 0;
+      width: 10%;
+      align-items: center;
+      justify-content: center;
+      a {
+        align-items: center;
+        justify-content: center;
+        .fas {
+          list-style: none;
+          text-decoration: none;
+          color: $fender-header-list;
+        }
       }
     }
   }

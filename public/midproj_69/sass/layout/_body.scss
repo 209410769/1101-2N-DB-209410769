@@ -1,0 +1,35 @@
+.menu-collection {
+  width: 100%;
+  box-sizing: border-box;
+
+  .large-menu-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .item {
+      display: flex;
+    }
+  }
+  .middle-menu-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .item {
+      width: 45%;
+      margin: 1.5rem;
+    }
+  }
+  .menu-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item {
+      margin: 5rem;
+      width: auto;
+      background-color: $fender-item-background;
+    }
+  }
+}
