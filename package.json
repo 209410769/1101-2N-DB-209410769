@@ -8,6 +8,10 @@
     "dev": "nodemon ./bin/www",
     "build": "react-scripts build"
   },
+  "engines": { 
+    "node": "8.9.4" 
+ },
+
   "dependencies": {
     "@heroku/buildpack-registry": "^1.0.1",
     "async-file": "^2.0.2",
