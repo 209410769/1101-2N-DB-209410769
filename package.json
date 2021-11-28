@@ -5,7 +5,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "build": "react-scripts build"
+  },
+  "engines": {
+    "node": "8.9.4"
   },
   "dependencies": {
     "@heroku/buildpack-registry": "^1.0.1",
@@ -20,7 +24,6 @@
     "pg": "^8.7.1",
     "phoenix": "^1.6.0",
     "valid-url": "^1.0.9",
-    "ws": "^8.2.3",
-    "node": "16.14.0"
+    "ws": "^8.2.3"
   }
 }
