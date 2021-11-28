@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
-    "build": "react-scripts build"
+    "dev": "nodemon ./bin/www"
   },
   
   "dependencies": {
