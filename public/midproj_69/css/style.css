@@ -21,6 +21,8 @@ html {
   width: 100%;
   position: relative;
   background: #ffffff;
+  align-items: center;
+  justify-content: center;
 }
 .contact-header__container {
   width: 100%;
@@ -86,6 +88,7 @@ html {
   justify-content: center;
 }
 .navbar-contact__container .navbar-contact__list li {
+  position: relative;
   margin: 0 2rem;
   align-items: center;
   justify-content: center;
@@ -96,7 +99,8 @@ html {
   text-decoration: none;
 }
 .navbar-contact__container .navbar-search-toggle {
-  margin: 1rem -1.5rem 0 0;
+  position: relative;
+  margin-top: 2rem;
   width: 10%;
   align-items: center;
   justify-content: center;
@@ -148,7 +152,7 @@ html {
 
 .container {
   width: 100%;
-  max-width: 120rem;
+  position: relative;
   padding: 0 1.5rem;
 }
 
