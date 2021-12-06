@@ -24,6 +24,7 @@
     list-style: none;
     li {
       display: inline-block;
+      width: auto;
       padding: 10px 0 12px;
       margin: 0 16px;
       font-size: 1.2rem;
@@ -32,6 +33,10 @@
       a {
         color: $fender-header-list;
         text-decoration: none;
+        font-weight: 300;
+      }
+      a:hover {
+        color: $fender-body-hr;
       }
     }
   }
@@ -57,8 +62,8 @@
     display: flex;
 
     .navbar-menu-toggle {
-      margin: 1rem 5rem 0 2rem;
-      width: 5%;
+      margin: 0 8rem;
+      width: 10%;
       align-items: center;
       justify-content: center;
       .fas {
@@ -87,6 +92,19 @@
           color: $fender-header-navbar;
           list-style: none;
           text-decoration: none;
+          font-weight: 700;
+          border-bottom: none;
+          .fas {
+            margin-left: 0.5rem;
+          }
+        }
+        a:hover {
+          color: $fender-body-hr;
+          border-bottom: 3px solid $fender-body-hr;
+        }
+        .fas:hover {
+          transition: 0.2s;
+          transform: rotate(90deg);
         }
       }
     }
@@ -97,9 +115,12 @@
       width: 5%;
       border-right: 1px solid $fender-header-background;
       border-left: 1px solid $fender-header-background;
+      border-bottom: none;
       justify-content: center;
       align-items: center;
-
+      .navbar-search-toggle:hover {
+        border-bottom: 4px solid $fender-body-hr;
+      }
       a {
         align-items: center;
         justify-content: center;
