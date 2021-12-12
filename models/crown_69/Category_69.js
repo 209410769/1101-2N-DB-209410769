@@ -23,7 +23,7 @@ const Category_69 = class Category_69 {
   static async fetchCatIdByName(name) {
     try{
       const results = await db.query(`select id from category_69 where name = $1`, [name]);
-      return results.rows[0].id; 
+      return results.rows[0].id;
     }catch(err){
       console.log(err);
     }
@@ -32,7 +32,7 @@ const Category_69 = class Category_69 {
 };
 
 // const test = async () => {
-//   let results = await Category_xx.fetchAll();
+//   let results = await Category_69.fetchAll();
 //   console.log('results', JSON.stringify(results.rows));
 // }
 
