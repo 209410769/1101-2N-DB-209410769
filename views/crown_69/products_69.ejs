@@ -15,7 +15,6 @@
     </a>
     <div class="options">
       <a href="/crown2_69/shop_69" class="option">Shop</a>
-      <a href="/shop_69" class="option">Contact</a>
       <a href="/signin" class="option">Sign In</a>
       <div class="cart-icon" onclick="cartToggle()">
         <img class="shopping-icon" src="/crown_69/assets/shopping-bag.svg" alt="" />
@@ -36,30 +35,34 @@
               <span class="price">1 * $90</span>
             </div>
           </div>
+          <button class="custom-button">GO TO CHECKOUT</button>
         </div>
-        <button class="custom-button">GO TO CHECKOUT</button>
       </div>
     </div>
   </div>
 
-  <div class="homepage">
-    <h3>
-      <%= title %> -- <%= name %>
+  <div class="shop-page">
+    <h2 style="text-align: center; margin-bottom: 15px">
+      <%= title.toUpperCase() %> -- <%= name %>
           <%= id %>
-    </h3>
-
-    <div class="directory-menu">
-      <% data.forEach( item=> { %>
-        <div class="<%= item.size %> menu-item">
-          <img class="background-image" src="/crown_69<%= item.local_url %>" alt="" />
-          <a href="<%= item.link_url %>" class="content">
-            <h1 class="title">
-              <%= item.name %>
-            </h1>
-            <span class="subtitle">SHOP NOW</span>
-          </a>
-        </div>
-        <% }) %>
+    </h2>
+    <div class="collection-page">
+      <div class="items">
+        <% data.forEach( item=> { %>
+          <div class="collection-item">
+            <img class="image" src="/crown_69<%= item.local_url %>" />
+            <div class="collection-footer">
+              <span class="name">
+                <%= item.name %>
+              </span>
+              <span class="price">
+                <%= item.price %>
+              </span>
+            </div>
+            <button class="custom-button">Add to Cart</button>
+          </div>
+          <% }); %>
+      </div>
     </div>
   </div>
 

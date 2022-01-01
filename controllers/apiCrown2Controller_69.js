@@ -1,4 +1,4 @@
-const serviceCrown2Controller_69 = require('../crown_69/serviceCrown2Controller_69');
+const serviceCrown2Controller_69 = require('./crown_69/serviceCrown2Controller_69');
 
 exports.getCategories = async (req, res) => {
   try {
@@ -10,7 +10,7 @@ exports.getCategories = async (req, res) => {
 };
 
 exports.getShop = async (req, res) => {
-  try{
+  try {
     const data = await serviceCrown2Controller_69.getShop();
     return res.json(data);
   } catch (err) {
@@ -18,13 +18,13 @@ exports.getShop = async (req, res) => {
   }
 }
 
-exports.getProductsByCategory = async (req,res) => {
-  console.log('category',req.params.category)
+exports.getProductsByCategory = async (req, res) => {
+  console.log('category', req.params.category);
   try {
-    const data = await serviceCrown2Controller_69.getProductsByCategory(req.params.category);
-    //console.log('getProductsByCategory',JSON,stringify(data))
-    return res.json(data);
-  } catch (err){
+     const data = await serviceCrown2Controller_69.getProductsByCategory(req.params.category);
+    //  console.log('getProductsByCategory', JSON.stringify(data));
+     return res.json(data);
+  } catch (err) {
     res.status(404).json(err);
   }
 }

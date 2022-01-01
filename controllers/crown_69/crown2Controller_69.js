@@ -9,7 +9,7 @@ exports.createProducts = async (req,res) =>{
     console.log('results', JSON.stringify(results));
     res.json('data:{msg:creating success}');
   }catch(err){
-
+    console.log(err);
   }
 };
 
@@ -69,7 +69,16 @@ exports.updateProducts = async (req,res) =>{
     console.log('results', JSON.stringify(results));
     res.json('data:{msg:updating successful}');
   }catch(err){
-
+       console.log(err);
   }
 };
 /* DELETE */
+exports.deleteProduct = async (req,res)=>{
+  console.log('deleteProduct',req.params.id);
+  try{
+    await serviceCrown2Controller_69.deleteById(req.params.id);
+    res.redirect('/crown2_69');
+  }catch(err){
+    console.log(err);
+  }
+}

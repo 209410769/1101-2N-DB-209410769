@@ -5,8 +5,8 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
   res.render('index', {
     title: 'Express',
-    name: 'Yanbo Lin',
-    id: '209410769',
+    name: 'YanBo Lin',
+    id: `209410769`,
   });
 });
 
