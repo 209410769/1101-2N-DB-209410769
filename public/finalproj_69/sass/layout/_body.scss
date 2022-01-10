@@ -1,0 +1,99 @@
+.menu-collection {
+  width: 100%;
+  box-sizing: border-box;
+
+  .large-menu-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .item {
+      display: flex;
+    }
+  }
+
+  .middle-menu-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .popular-cat-heading {
+      display: block;
+      background: #d52b1e;
+      position: absolute;
+      padding-bottom: 5rem;
+      padding-top: 2rem;
+      width: 100%;
+      height: 14.2 rem;
+      z-index: 1;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      h3 {
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 4.4rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+      }
+    }
+    .items {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .item {
+        width: 45%;
+        margin: 1.5rem;
+      }
+    }
+  }
+  .heading {
+    font-family: FuturaPT, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: uppercase;
+    float: left;
+    clear: left;
+    padding: 5rem 10rem;
+    hr {
+      width: 6rem;
+      display: block;
+      border-top: 4px solid $fender-body-hr;
+    }
+  }
+  .menu-item {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    .item {
+      display: flex;
+      margin: 5rem;
+      width: 25%;
+      background-color: $fender-item-background;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      .new-tag-true {
+        font-family: FuturaPT, sans-serif;
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.2rem 1rem;
+        background-color: $fender-body-hr;
+        font-weight: 700;
+        position: absolute;
+        top: 1.1rem;
+        z-index: 1500;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

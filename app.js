@@ -13,6 +13,7 @@ const api_69_Router = require('./routes/api_69');
 const midproj_69_Router = require('./routes/midproj_69');
 const midterm_69_Router = require('./routes/midterm_69');
 const booksRouter = require('./routes/books_69.js');
+const fender = require('./routes/fender')
 var app = express();
 
 // view engine setup
@@ -46,9 +47,9 @@ app.use('/midproj_69', midproj_69_Router);
 app.use('/midterm_69', midterm_69_Router);
 
 /* Books CRUD demo */
-app.use('/books_69',booksRouter)
+app.use('/books_69',booksRouter);
 /* finalproj_69 */
-
+app.use('/fender',fender);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
